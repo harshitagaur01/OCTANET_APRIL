@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color:#edeff2;
+    height: 80px;
+    position:sticky;
+    top:0%;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+}
+
+#logo{
+    font-style: italic;
+    font-size: 35px;
+    color:rgb(142, 59, 117);
+}
+
+
+.loginbutton{
+    width:100px;
+}
+
+.login{
+    width:100px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.login:hover{
+    width:115px;
+    height: 40px;
+    background: rgb(32, 31, 31);
+}
+
+#myVideo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video{
+    position: relative;
+    color: white;
+}
+.videotext{
+    position: absolute;
+    top:10%;
+    left:10%;
+}
+
+.videotext h1{
+    font-family:cursive;
+    font-size:5vw;
+}
+
+.videotext p{
+    font-size: 1.5vw;
+}
+
+.videotext button{
+    margin: 5px;
+    width:10vw;
+    height:6vh;
+    background: rgb(247, 246, 246);
+    color: rgb(5, 4, 4);
+    border-radius:2vw;
+    border-style: none;
+}
+
+.details{
+    margin:1% 0% 1% 1%;
+    display:grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    column-gap:0.2%;
+    row-gap:3.5vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img{
+    width:15vw;
+    height:35vh;
+    border-radius: 10%;
+    margin:0% 15% 1%;
+}
+
+#item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:10vw;
+    color: rgb(136, 38, 116);
+    padding-top:25%;
+    padding-left: 5%;
+    box-sizing: content-box;
+}
+
+.item{
+    width:20vw;
+    height: 60vh;
+    padding:2vh 2vw;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: grey;
+    box-sizing: content-box;
+}
+
+.item:hover{
+    background-color: #edeff2;
+}
+.item h4{
+    font-size: 25px;
+    width:100%;
+    height:20%;
+}
+.item h4 a{
+    text-decoration: none;
+    color:black
+}
+.item p{
+    width:100%;
+    font-size: 18px;
+    height: 20%;
+}
+
+.explore{
+    display: flex;
+    flex-direction: row;
+    margin:5% 1%;
+}
+
+.advise{
+    height:60vh;
+    width:60vw;
+}
+.question{
+    height: 60vh;
+    width: 40vw;
+    margin: 0% 2%;
+    border-style: solid;
+    border-width: 0.2px;
+    border-color: grey;
+}
+
+.question h5{
+    margin:5% 5%;
+    font-size: 25px;
+}
+
+.question p{
+    margin:5% 5%;
+    font-size: 20px;
+}
+
+.question button{
+    width:100px;
+    height: 30px;
+    background: rgb(144, 40, 101);
+    color: white;
+    border-radius: 25px;
+    border-style: none;
+    margin:5% 5%;
+}
+.question button:hover{
+    width:115px;
+    height:40px;
+    background: rgba(142, 40, 99, 0.941);
+}
+footer{
+    background-color:#edeff2;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.2px;
+    border-color: grey;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    width:96vw;
+    height: 30vh;
+}
+footer ul {
+    width:25vw;
+}
+footer ul li{
+    list-style: none;
+    margin:1%;
+}
+footer a{
+    color:grey;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+.navigate{
+    height:5vh;
+    width:100vw;
+    background-color: #edeff2;
+    display:none;
+}
+
+.navigate button{
+    background-color: transparent;
+    border-style: none;
+    margin-left:10px;
+    margin-top:4px;
+}
+
+#navafter{
+    height: 100vh;
+    width:15vw;
+    display:none;
+    background-color:rgba(20, 17, 19, 0.79);
+    position:fixed;
+    top:5%;
+    z-index:1;
+}
+
+#navafter ul{
+    display: flex;
+    flex-direction:column;
+}
+#navafter ul li{
+    width:auto;
+    height:auto;
+    margin:5% 2%;
+    padding: 1%;
+}
+
+#navafter ul li a{
+    font-size: auto;
+    color:white;
+    text-decoration: none;
+}
+
+#navafter ul li a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:850px) {
+    nav{
+        display: none;
+    }
+    .navigate{
+        display:block;
+        position:fixed;
+        z-index: 1;
+    }
+    #myVideo{
+        display: none;
+    }
+
+    .video{
+        width:100vw;
+        height:38vh;
+        background-image: url(wed.avif);
+        background-size:100%;
+        background-repeat: no-repeat;
+    }
+
+    .details{
+        margin:1% 0% 1% 1%;
+        display:grid;
+        grid-template-columns:50vw 50vw;
+        column-gap:0.2%;
+        row-gap:1vh;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    #item1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size:18px;
+        font-family: Arial, Helvetica, sans-serif;
+        width:100vw;
+        height: 10vh;
+        padding-top:0%;
+    }
+
+    .item{
+        width:40vw;
+        height: 60vh;
+        padding:2vh 2vw;
+        border-style: solid;
+        border-width: 0.1px;
+        border-color: grey;
+        box-sizing: content-box;
+    }
+
+    .img{
+        width:30vw;
+        height:35vh;
+        border-radius: 10%;
+        margin:0% 4% 1%;
+    }    
+
+    footer{
+        height: 50vw;
+    }
+
+    .videotext button{
+        margin: 5px;
+        width:20vw;
+        height:6vh;
+        background: rgb(247, 246, 246);
+        color: rgb(5, 4, 4);
+        border-radius:2vw;
+        border-style: none;
+    }
+
+    .videotext h1{
+        font-family:cursive;
+        font-size:5vw;
+    }
+    
+    .videotext p{
+        font-size: 2vw;
+    }
+
+    .videotext{
+        position: absolute;
+        top:30%;
+        left:20%;
+    }
+
+    #navafter{
+        width:150px;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    .video{
+        width:100vw;
+        height:20vh;
+    }
+
+    .videotext button{
+        display: none;
+    }
+
+    .details{
+        margin:1% 0% 1% 1%;
+        display:grid;
+        grid-template-columns:100vw;
+        column-gap:0.2%;
+        row-gap:1vh;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .item{
+        width:90vw;
+        height: 40vh;
+        padding:2vh 2vw;
+        border-style: solid;
+        border-width: 0.1px;
+        border-color: grey;
+        box-sizing: content-box;
+        margin-left:2%;
+    }
+
+    .img{
+        width:75vw;
+        height:20vh;
+        border-radius: 10%;
+        margin:0% 2% 1% 2%;
+    }  
+
+    .advise{
+        height:40vh;
+        width:100vw;
+    }
+
+    .question{
+        height: 30vh;
+        width: 100vw;
+        margin: 0% 2%;
+        border-style: solid;
+        border-width: 0.2px;
+        border-color: grey;
+    }
+
+    footer{
+        height: 30vh;
+    }
+
+    #navafter ul li{
+        width:auto;
+        height:auto;
+        margin:10% 2%;
+        padding: 1%;
+    }
+
+    #navafter{
+        width:150px;
+    }
+
+    .explore{
+        display: flex;
+        flex-direction:column;
+        margin:5% 1%;
+    }
+    
+}
